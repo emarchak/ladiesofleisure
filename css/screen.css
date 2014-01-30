@@ -2,67 +2,106 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
+@font-face {
+  font-family: "Pacifico";
+  src: url('/fonts/pacifico.woff') format('woff'), url('/fonts/pacifico.ttf') format('truetype'), url('/fonts/pacifico.eot') format('embedded-opentype');
   font-weight: normal;
-  vertical-align: middle;
+  font-style: normal;
 }
 
-/* line 30, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
+* {
+  font-family: sans-serif;
+  max-width: 100%;
 }
 
-/* line 32, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
 }
 
-/* line 116, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
+p {
+  margin: 1em 0;
+}
+
+a {
+  color: #222222;
+}
+a:hover {
+  color: #ee16dc;
+}
+a:visited {
+  color: #ee16dc;
+}
+
+iframe {
+  width: 100%;
+  max-width: 100%;
+}
+
+html {
+  background: #fdfdfd;
+}
+
+.site {
+  font-size: 115%;
+  text-align: justify;
+  width: 42em;
+  max-width: 100%;
+  margin: 3em auto 2em;
+  line-height: 1.5em;
+}
+
+.header {
+  margin-bottom: 2em;
+  text-align: center;
+}
+.header h1 {
+  margin-bottom: -.25em;
+  font-size: 300%;
+}
+.header h1 a {
+  font-family: 'Pacifico', sans-serif;
+}
+.header h1 a span {
+  margin: auto -.2em;
+  position: relative;
+  top: -.2em;
+  font-size: 60%;
+  font-family: sans-serif;
+}
+.header h2 {
+  padding-left: .75em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: .85em;
+  color: #ee16dc;
+}
+
+.meta {
+  color: #aaa;
+}
+
+.footer {
+  font-size: 80%;
+  color: #999999;
+  border-top: 4px solid #eee;
+  margin-top: 2em;
+  overflow: hidden;
+}
+.footer .contact {
+  float: left;
+  margin-right: 3em;
+}
+.footer .contact a {
+  color: #8085C1;
+}
+.footer .rss {
+  margin-top: 1.1em;
+  margin-right: -0.2em;
+  float: right;
+}
+.footer .rss img {
+  border: 0;
 }

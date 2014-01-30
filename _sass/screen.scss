@@ -1,0 +1,110 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+
+@include font-face('Pacifico',
+  font-files(
+  	"pacifico.woff",
+  	"pacifico.ttf",
+  	"pacifico.eot"),
+	$weight:normal,
+	$style:normal);
+
+$text: #222;
+$text_sub: #999;
+$link: #ee16dc;
+
+// Text =========================================
+* {
+  font-family: sans-serif;
+  max-width: 100%;
+}
+
+
+#{headings(all)} {
+  font-size: 100%;
+ a {
+    text-decoration: none;
+  }
+}
+
+p { margin: 1em 0; }
+
+a {
+  color: $text;
+  &:hover   { color: $link; }
+  &:visited { color: $link; }
+  }
+
+iframe {
+  width: 100%;
+  max-width: 100%;
+}
+
+// Site =========================================
+html {
+  background: #fdfdfd;
+}
+
+.site {
+  font-size: 115%;
+  text-align: justify;
+  width: 42em;
+  max-width: 100%;
+  margin: 3em auto 2em;
+  line-height: 1.5em;
+}
+  .header {
+    margin-bottom: 2em;
+    text-align: center;
+    h1 {
+      margin-bottom: -.25em;
+      font-size: 300%;
+      a {
+
+      font-family: 'Pacifico', sans-serif;
+        span {
+          margin: auto -.2em;
+          position: relative;
+          top: -.2em;
+          font-size: 60%;
+          font-family: sans-serif;
+        }
+      }
+    }
+    h2 {
+      padding-left: .75em;
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: .85em;
+      color: $link;
+    }
+  }
+  .meta {
+    color: #aaa;
+  }
+  .footer {
+    font-size: 80%;
+    color: $text_sub;
+    border-top: 4px solid #eee;
+    margin-top: 2em;
+    overflow: hidden;
+    .contact {
+      float: left;
+      margin-right: 3em;
+      a {
+        color: #8085C1;
+      }
+    }
+    .rss {
+      margin-top: 1.1em;
+      margin-right: -0.2em;
+      float: right;
+      img {
+        border: 0;
+      }
+    }
+  }

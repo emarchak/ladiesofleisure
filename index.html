@@ -1,10 +1,13 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Ladies of Leisure
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
+
+  <iframe src="//player.vimeo.com/video/85401494" width="772" height="443" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <p><strong>The Ladies of Leisure are women of independent means.</strong> They have no duties or responsibilities to anyone other than themselves. These gentlewomen <strong>navigate the modern world with tips, tricks and suggestions from the Good Housekeeping Guide of the 1960s.</strong> There’s nothing that can’t be solved by self-reliance, friendship and a strong martini.</p>
+  <p><a href="http://twitter.com/emarchak">Erin Marchak</a>, Joan Patch, <a href="http://twitter.com/candacemeeks">Candace Meeks</a> and Tracy Bradley are the Ladies, and they have been <strong>improvising collectively for more than a decade.</strong> They’re alumni of Second City, Impatient Theatre, Bad Dog Theatre and the Toronto Fringe. </p>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
